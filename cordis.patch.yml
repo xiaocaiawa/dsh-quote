@@ -1,0 +1,15 @@
+# ============================================================================
+# dsh-quote —— DSH bundle patch
+# ============================================================================
+# 挂载声明：DSH 启动时按 bundle 层栈叠加各插件的 patch，
+# 本文件把 dsh-quote 插入 Web profile 的配置树。
+#
+# 安装：
+#   dsh plugin --profile web add link:D:\dsh-quote
+# 卸载：
+#   dsh plugin --profile web remove dsh-quote
+# ============================================================================
+
+- insert:
+    - id: dsh-quote
+      name: dsh-quote

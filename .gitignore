@@ -1,0 +1,16 @@
+# 依赖与构建产物
+node_modules/
+dist/
+*.tgz
+*.zip
+
+# 本地配置（可能含 API key，千万别传）
+config.json
+.env
+*.key
+*.pem
+
+# 日志与系统垃圾
+*.log
+Thumbs.db
+.DS_Store

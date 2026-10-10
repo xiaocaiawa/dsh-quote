@@ -1,0 +1,27 @@
+{
+  "name": "dsh-quote",
+  "version": "0.1.0",
+  "description": "DSH Web GUI 部分引用扩展：在对话里划选文字后一键引用到输入框",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "quote",
+    "reference",
+    "web"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}
