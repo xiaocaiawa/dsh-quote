@@ -12,10 +12,6 @@
 - **原文不进对话**：点一下，原文上传到引用仓库，输入框里只插入 `❝N `，光标停在后面
 - **点标记看原文**：消息里的 `❝N` 渲染成可点标记，点开显示引用原文
 - **快捷键**：`Ctrl + Shift + Q` 直接引用当前选区（不必点浮出按钮）
-- **喵模式小菜单**：输入框旁边的「喵」按钮，三档切换（确定 / 不确定 / 随机）。
-  它把当前档位写进 `$DSH_HOME/AGENTS.md` 里一个受管小节——因为 DSH 会自动把该文件
-  注入模型上下文，模型每轮就知道该不该带「喵」，不需要额外读文件。
-  按钮可以用鼠标拖动，位置记在 `localStorage`
 
 ## 安装
 
@@ -47,7 +43,6 @@ dsh plugin --profile web remove dsh-quote
 | `/dsh-quote/quote.js` | GET | 把 `lib/quote.js` 原样吐出去（**每次请求现读**，改完刷新即可） |
 | `/dsh-quote/store` | POST | 存一条引用原文，返回短 `id` |
 | `/dsh-quote/get/<id>` | GET | 按 `id` 读回引用原文 |
-| `/dsh-quote/miao` | GET / POST | 读 / 写喵模式档位 |
 
 注入用 `ctx.webServer.tapIndex`，把 `<script defer src="/dsh-quote/quote.js">` 塞到 `</body>` 前。
 
