@@ -1,4 +1,4 @@
-# dsh-quote —— DSH Web GUI 引用扩展
+# dsh-quote —— DSH Web GUI 引用
 
 在 DSH Web 界面里**划选任意文字 → 浮出「❝ 引用」按钮 → 一键把原文引用到输入框**。
 
@@ -30,7 +30,6 @@ tgz 方式（分发用）：
 ```powershell
 dsh plugin --profile web add C:\path\to\dsh-quote-0.1.0.tgz
 ```
-
 装完**重启 dsh web**（宿主侧插件只在启动时加载），再刷新浏览器。
 
 ## 卸载
